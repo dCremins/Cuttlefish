@@ -3,6 +3,7 @@
   "description": "A custom theme for Ghost",
   "demo": "https://demo.ghost.io",
   "version": "0.0.1",
+  "sasslintConfig": ".sass-lint.yml",
   "engines": {
     "node": ">=4.4.0"
   },
@@ -22,8 +23,13 @@
     "ghost": "0.11.7",
     "gulp": "^3.9.1",
     "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-sym": "^1.0.2",
     "require-dir": "^0.3.1",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "normalize-scss": "^6.0.0"
   }
 }

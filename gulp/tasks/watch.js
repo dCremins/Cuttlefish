@@ -2,8 +2,8 @@
 var gulp = require('gulp');
 
 gulp.task('ghost', ['ghost:start'], function (callback) {
-  gulp.watch('sass/**/*.scss',['styles']);
+  gulp.watch('app/assets/sass/**/*.scss',['styles']);
   gulp.watch('app/**/*.hbs', ['browsersync:reload']);
-  gulp.watch('css/**/*.css',['browsersync:reload']);
+  gulp.watch('app/assets/css/**/*.css',['browsersync:reload']);
   callback();
 });
